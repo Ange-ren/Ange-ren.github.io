@@ -9,18 +9,15 @@ description:  Navicat Premium 连接sql server 需要安装client 然而安装�
 
 
 
-若报错信息类似 win32，需要安装VC2005，client依赖于它
+若报错信息
+![Navicatclient.png](https://lonelyi.cn/images/Navicatclient.png)
+
+需要安装VC2005，client依赖于它
 
 
 
 若安装VC2005依然失败：
 
-报错信息类似 "win32"，有可能是sp1没有装，去https://www.microsoft.com/zh-cn/download/details.aspx?id=5842下载windows6.1-KB976932-X64.exe安装，若还是安装失败，需要windows检测更新，重启后再安装sp1
+报错信息类似 "win32",有可能是sp1没有装，去 https://www.microsoft.com/zh-cn/download/details.aspx?id=5842
+下载windows6.1-KB976932-X64.exe安装，若还是安装失败，需要windows检测更新，重启后再安装
 
-
-
-报错信息类似 "安装程序集失败"，注册表的原因，按下面教程弄完重启电脑http://jingyan.baidu.com/article/0320e2c1eb3a681b86507b51.html
-
-
-
-重启后，就可以安装
