@@ -3,6 +3,8 @@ title: Changes not staged for commit
 date: 2019-10-10 15:39:39
 categories: 问题解决
 description:  git commit 报 "Changes not staged for commit:"是怎么回事?。
+photos: 
+    - "http://lonelyi.cn/images/你的名字.jpg"
 ---
 我是clone了一个文件夹下来，然后想把这个文件夹添加到github，commit push到github之后
 发现是一个空文件夹
