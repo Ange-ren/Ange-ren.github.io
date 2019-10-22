@@ -29,11 +29,12 @@ date: 2019-10-22 16:34:06
       <div style="text-align:center">
        <br />
 	    <blockquote class="blockquote-center">
-		   <strong> 发送邮件到<a class = "a" href ="mailto:shiyi_box@163.com">shiyi_box@163.com</a> 格式如下 </strong>
-		 <!--  <span class="with-love" id="animate1"><i class="fa fa-heart"></i> </span>
-		   <span class="with-love" id="animate2"> <i class="fa fa-heart"></i></span> -->
+		<!--   <strong> 发送邮件到<a class = "a" href ="mailto:shiyi_box@163.com">shiyi_box@163.com</a> 格式如下 </strong> -->
+		  <div class="note info">
+			<p>排名不分先后，欢迎访问(～￣▽￣)～</p>
+		</div>
+		  <p>如您想互换友链，可以 <strong>先在贵站添加以下信息，然后再在下方留言</strong>，审核之后，贵站的信息就会被添加到列表中啦～</p>
 		 </blockquote>
-       <br />
       </div>
       <div class="note success">
        <h2 id="友链格式"><a href="#友链格式" class="headerlink" title="友链格式"></a>友链格式</h2>
