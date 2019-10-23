@@ -24,6 +24,16 @@ date: 2019-10-22 16:34:06
         不怕千万人阻挡,只怕自己投降
          </div>
         </div>
+       </div>   
+	   <div class="card">
+        <a class="fancybox fancybox.image" href="https://www.ak47007.cn/007.jpg" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default"><img class="ava" src="https://www.ak47007.cn/007.jpg" /></a>
+        <div class="card-header">
+         <div>
+          <a href="https://www.ak47007.cn" target="_blank" rel="external nofollow noopener noreferrer">@ AK47凌凌漆的博客</a>
+         </div>
+         <div class="info">
+         </div>
+        </div>
        </div>
  </div>
       <div style="text-align:center">
@@ -31,7 +41,7 @@ date: 2019-10-22 16:34:06
 	    <blockquote class="blockquote-center">
 		<!--   <strong> 发送邮件到<a class = "a" href ="mailto:shiyi_box@163.com">shiyi_box@163.com</a> 格式如下 </strong> -->
 		  <div class="note info">
-			<p>排名不分先后，欢迎访问(～￣▽￣)～</p>
+			<p>欢迎访问(～￣▽￣)～</p>
 		</div>
 		  <p>如您想互换友链，可以 <strong>先在贵站添加以下信息，然后发送邮件到<a class = "a" href ="mailto:shiyi_box@163.com">shiyi_box@163.com</a></strong>，审核之后，贵站的信息就会被添加到列表中啦～</p>
 		 </blockquote>
@@ -49,7 +59,7 @@ date: 2019-10-22 16:34:06
         <li>网站名称：十一的小站</li>
         <li>网站地址：<a href="https://lonelyi.cn">https://lonelyi.cn</a></li>
         <li>网站描述：世间所有的相遇,都是久别重逢</li>
-        <li>网站Logo/头像：<strong><a class = "a" href="https://lonelyi.cn/images/avatar.jpg">https://lonelyi/images/avatar.jpg</a></strong></li>
+        <li>网站Logo/头像：<strong><a class = "a" href="https://lonelyi.cn/images/avatar.jpg">https://lonelyi.cn/images/avatar.jpg</a></strong></li>
        </ol>
       </blockquote> -->
      </div>
