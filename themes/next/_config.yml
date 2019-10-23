@@ -130,6 +130,7 @@ menu:
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
+  message: /message/ || envelope
   link: /link/ || link
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap

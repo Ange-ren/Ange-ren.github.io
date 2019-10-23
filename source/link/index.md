@@ -43,7 +43,7 @@ date: 2019-10-22 16:34:06
 		  <div class="note info">
 			<p>欢迎访问(～￣▽￣)～</p>
 		</div>
-		  <p>如您想互换友链，可以 <strong>先在贵站添加以下信息，然后发送邮件到<a class = "a" href ="mailto:shiyi_box@163.com">shiyi_box@163.com</a></strong>，审核之后，贵站的信息就会被添加到列表中啦～</p>
+		  <p>如您想互换友链，可以 <strong>先在贵站添加以下信息，在下面留言或发送邮件到<a class = "a" href ="mailto:shiyi_box@163.com">shiyi_box@163.com</a></strong>，审核之后，贵站的信息就会被添加到列表中啦～</p>
 		 </blockquote>
       </div>
 	    <div class="note success">
