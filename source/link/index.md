@@ -36,15 +36,22 @@ date: 2019-10-22 16:34:06
 		  <p>如您想互换友链，可以 <strong>先在贵站添加以下信息，然后发送邮件到<a class = "a" href ="mailto:shiyi_box@163.com">shiyi_box@163.com</a></strong>，审核之后，贵站的信息就会被添加到列表中啦～</p>
 		 </blockquote>
       </div>
-      <blockquote class="note success">
+	    <div class="note success">
+		   <p><strong><font color="#5cb85c">友链格式</font></strong></p>
+		   <p>名称：十一的小站</p>
+		   <p>地址：<strong><a class = "a" href="https://lonelyi.cn">https://lonelyi.cn</a></strong></p>
+		   <p>描述：世间所有的相遇,都是久别重逢</p>
+		   <p>头像：<strong><a class = "a" href="https://lonelyi.cn/images/avatar.jpg">https://lonelyi/images/avatar.jpg</a></strong></p>
+		</div>
+     <!-- <blockquote class="note success">
        <h2 id="友链格式"><a href="#友链格式" class="headerlink" title="友链格式"></a>友链格式</h2>
        <ol>
         <li>网站名称：十一的小站</li>
         <li>网站地址：<a href="https://lonelyi.cn">https://lonelyi.cn</a></li>
         <li>网站描述：世间所有的相遇,都是久别重逢</li>
-        <li>网站Logo/头像：<a href="https://lonelyi.cn/images/avatar.jpg">https://lonelyi/images/avatar.jpg</a></li>
+        <li>网站Logo/头像：<strong><a class = "a" href="https://lonelyi.cn/images/avatar.jpg">https://lonelyi/images/avatar.jpg</a></strong></li>
        </ol>
-      </blockquote>
+      </blockquote> -->
      </div>
     </div>
    </div>

@@ -641,8 +641,8 @@ disqusjs:
 # Changyan
 changyan:
   enable: false
-  appid:
-  appkey:
+  appid: 
+  appkey: 
   #post_meta_order: 0
 
 # Valine
@@ -667,7 +667,7 @@ valine:
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: # <your_uid>
+livere_uid: MTAyMC80NzIwNy8yMzcwNw
 
 # Gitalk
 # Demo: https://gitalk.github.io
