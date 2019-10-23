@@ -1,5 +1,5 @@
 ---
-title: 友链
+title: 友情链接
 date: 2019-10-22 16:34:06
 ---
 <html>
@@ -33,18 +33,18 @@ date: 2019-10-22 16:34:06
 		  <div class="note info">
 			<p>排名不分先后，欢迎访问(～￣▽￣)～</p>
 		</div>
-		  <p>如您想互换友链，可以 <strong>先在贵站添加以下信息，然后再在下方留言</strong>，审核之后，贵站的信息就会被添加到列表中啦～</p>
+		  <p>如您想互换友链，可以 <strong>先在贵站添加以下信息，然后发送邮件到<a class = "a" href ="mailto:shiyi_box@163.com">shiyi_box@163.com</a></strong>，审核之后，贵站的信息就会被添加到列表中啦～</p>
 		 </blockquote>
       </div>
-      <div class="note success">
+      <blockquote class="note success">
        <h2 id="友链格式"><a href="#友链格式" class="headerlink" title="友链格式"></a>友链格式</h2>
        <ol>
         <li>网站名称：十一的小站</li>
         <li>网站地址：<a href="https://lonelyi.cn">https://lonelyi.cn</a></li>
-        <li> 网站描述：世间所有的相遇，都是久别重逢</li>
-        <li>网站 Logo / 头像：<a href="https://lonelyi.cn/images/avatar.jpg">https://lonelyi/images/avatar.jpg</a></li>
+        <li>网站描述：世间所有的相遇,都是久别重逢</li>
+        <li>网站Logo/头像：<a href="https://lonelyi.cn/images/avatar.jpg">https://lonelyi/images/avatar.jpg</a></li>
        </ol>
-      </div>
+      </blockquote>
      </div>
     </div>
    </div>
