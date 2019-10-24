@@ -214,7 +214,8 @@ links_settings:
   layout: block
 
 links:
-  #Title: http://example.com
+  #qq导航: https://hao.qq.com/
+#github: https://github.com/
 
 # Table of Contents in the Sidebar
 toc:
@@ -382,7 +383,7 @@ codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: normal
+  highlight_theme: night
   # Add copy button on codeblock
   copy_button:
     enable: false
@@ -1122,3 +1123,9 @@ vendors:
 css: css
 js: js
 images: images
+
+
+# Live2D
+## https://github.com/EYHN/hexo-helper-live2d
+#live2d:
+
