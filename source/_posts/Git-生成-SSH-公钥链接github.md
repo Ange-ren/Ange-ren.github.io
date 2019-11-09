@@ -2,10 +2,11 @@
 title: Git - 生成 SSH 公钥链接github
 date: 2019-10-24 11:24:16
 categories: 学习记录
-description: 使用SSH方式实现Git远程连接GitHub
 tags: Git
 ---
-
+使用SSH方式实现Git远程连接GitHub
+网上很多github的流程比较乱,自己尝试整理了一下，如果有不清楚的可详细进行搜索对比
+<!--more-->
 ```shell
 // 查看是否存在秘钥
 $ cd ~/.ssh

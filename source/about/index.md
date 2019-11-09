@@ -2,17 +2,40 @@
 title: 关于
 date: 2019-10-09 09:13:06
 ---
+
 <html>
  <head>
- <blockquote class="blockquote-center"><p>世间所有的相遇，都是久别重逢</p></blockquote>
-<hr style="background-color:#a4d8fa">
-  <p><a href="about.jpg"  data-fancybox="images"><img src="about.jpg"></a></p>
-  <blockquote class="blockquote"> 
-   也尝试过花里胡哨<br />发现背驰了写技术博客的初衷<br />记录技术，展示文字，才是写博客的初心<br />简洁、突出文字输出，是主题的格调
-  </blockquote>
-  <hr>
-  <blockquote class="blockquote"> 
-	E-Mali <a class = "a" href ="mailto:shiyi_box@163.com"><strong>shiyi_box@163.com</strong></a>
-  </blockquote>
+<html>
+ <head></head>
+ <body>
+  <div class="post-body" style="opacity: 1; display: block; transform: translateY(0px);"> 
+   <center>
+    这是一个单纯的个人博客
+   </center> 
+   <center>
+    由一个不正经的码农搭建
+   </center>
+   <br />
+   <center>
+    偶尔写技术
+   </center> 
+   <center>
+    一般写心情
+   </center>
+   <br />
+   <center>
+    如果想与我聊些什么
+   </center> 
+   <center>
+    可以给我留言 
+   </center> 
+  <!-- <blockquote class="blockquote"> 
+	E-Mali <a class = "a" href ="mailto:yezioh_box@163.com"><strong>yezioh@163.com</strong></a>
+  </blockquote> -->
+  </div>
+
+ </body>
+</html>
+  
  </body>
 </html>

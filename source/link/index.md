@@ -35,6 +35,17 @@ date: 2019-10-22 16:34:06
          </div>
         </div>
        </div>
+	    <div class="card">
+        <a class="fancybox fancybox.image" href="http://aisakaki.com/images/apple-touch-icon-next.png" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default"><img class="ava" src="http://aisakaki.com/images/apple-touch-icon-next.png" /></a>
+        <div class="card-header">
+         <div>
+          <a href="https://www.aisakaki.com" target="_blank" rel="external nofollow noopener noreferrer">@ 宵晓咲的博客</a>
+         </div>
+         <div class="info">
+		 且听风吟
+         </div>
+        </div>
+       </div>
  </div>
       <div style="text-align:center">
        <br />
