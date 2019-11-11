@@ -46,35 +46,27 @@ date: 2019-10-22 16:34:06
          </div>
         </div>
        </div>
- </div>
-      <div style="text-align:center">
+  </div>
+  <div style="text-align: center"><i>友链互换,下方留言</i></div>
+    <!--  <div style="text-align:center">
        <br />
 	    <blockquote class="blockquote-center">
-		<!--   <strong> 发送邮件到<a class = "a" href ="mailto:shiyi_box@163.com">shiyi_box@163.com</a> 格式如下 </strong> -->
+		   <strong> 发送邮件到<a class = "a" href ="mailto:shiyi_box@163.com">shiyi_box@163.com</a> 格式如下 </strong> 
 		  <div class="note info">
 			<p>欢迎访问(～￣▽￣)～</p>
 		</div>
 		  <p>如您想互换友链，可以 <strong>先在贵站添加以下信息，在下面留言或发送邮件到<a class = "a" href ="mailto:shiyi_box@163.com">shiyi_box@163.com</a></strong>，审核之后，贵站的信息就会被添加到列表中啦～</p>
 		 </blockquote>
-      </div>
+      </div>  -->
 	    <div class="note success">
 		   <p><strong><font color="#5cb85c">友链格式</font></strong></p>
-		   <p>名称：十一的小站</p>
-		   <p>地址：<strong><a class = "a" href="https://lonelyi.cn">https://lonelyi.cn</a></strong></p>
-		   <p>描述：世间所有的相遇,都是久别重逢</p>
-		   <p>头像：<strong><a class = "a" href="https://lonelyi.cn/images/avatar.jpg">https://lonelyi/images/avatar.jpg</a></strong></p>
-		</div>
-     <!-- <blockquote class="note success">
-       <h2 id="友链格式"><a href="#友链格式" class="headerlink" title="友链格式"></a>友链格式</h2>
-       <ol>
-        <li>网站名称：十一的小站</li>
-        <li>网站地址：<a href="https://lonelyi.cn">https://lonelyi.cn</a></li>
-        <li>网站描述：世间所有的相遇,都是久别重逢</li>
-        <li>网站Logo/头像：<strong><a class = "a" href="https://lonelyi.cn/images/avatar.jpg">https://lonelyi.cn/images/avatar.jpg</a></strong></li>
-       </ol>
-      </blockquote> -->
-     </div>
-    </div>
+		   <p><i>名称：十一的小站</i></p>
+		   <p><i>地址：<strong><a class = "a" href="https://lonelyi.cn">https://lonelyi.cn</a></strong></i></p>
+		   <p><i>描述：每个人都衣冠楚楚，从来没有人会关心光芒万丈的外表下那藏在角落的，发了霉的落寞。</p></i>
+		   <p><i>头像：<strong><a class = "a" href="https://lonelyi.cn/images/avatar.jpg">https://lonelyi/images/avatar.jpg</a></strong></i></p>
+		</div>  
+     </div> 
+    </div> 
    </div>
   </div>
  </body>

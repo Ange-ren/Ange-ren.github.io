@@ -1,3 +1,76 @@
-// Custom styles.
+//PC
+@media screen and (min-aspect-ratio: 1/1){
+body:before {
+  content: ' ';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(https://tding.top/images/bg-2.webp) center 0 no-repeat;
+  background-size: cover;
+  }
+
+// 修改主体透明度
+.main-inner {
+      background: #fff;
+      opacity: 0.95
+      //设置内边距
+      padding: 50px;
+    }
+
+// 修改菜单栏透明度
+//.header-inner {
+//      opacity: 0.9;
+//    }
+
+/*设置底部文字*/
+#footer > div > div {
+        color:#eee;
+    }
+
+//新加,直接暴力修改menu //仅适用PC端
+.menu .menu-item a {
+      padding: 1px 5px;
+      background: transparent;
+      border: none;
+      color: #fff;
+      //transition-property: background;
+      //box-shadow: 5px 5px 5px #888;
+      border-radius: 10px;
+    }
+}
 
 
+// MOBILE
+@media screen and (max-aspect-ratio: 1/1){
+body:before {
+  content: ' ';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(https://aisakaki.com/images/59290839_p0.jpg) center 0 no-repeat;
+  background-size: cover;
+  }
+// 修改主体透明度
+.main-inner {
+      background: #fff;
+      opacity: 0.9;
+      //设置内边距
+      padding: 20px;
+    }
+
+// 修改菜单栏透明度
+//.header-inner {
+//      opacity: 0.9;
+//    }
+
+/*设置底部文字*/
+#footer > div > div {
+        color:#eee;
+    }
+}
