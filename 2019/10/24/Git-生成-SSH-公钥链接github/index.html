@@ -50,18 +50,18 @@
   };
 </script>
 
-  <meta name="description" content="使用SSH方式实现Git远程连接GitHub网上很多github的流程比较乱,自己尝试整理了一下，如果有不清楚的可详细进行搜索对比">
+  <meta name="description" content="使用SSH方式实现Git远程连接GitHub 网上很多github的流程比较乱,自己尝试整理了一下，如果有不清楚的可详细进行搜索对比">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git - 生成 SSH 公钥链接github">
 <meta property="og:url" content="http://lonelyi.cn/2019/10/24/Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5%E9%93%BE%E6%8E%A5github/index.html">
 <meta property="og:site_name" content="Shiyi的小站">
-<meta property="og:description" content="使用SSH方式实现Git远程连接GitHub网上很多github的流程比较乱,自己尝试整理了一下，如果有不清楚的可详细进行搜索对比">
+<meta property="og:description" content="使用SSH方式实现Git远程连接GitHub 网上很多github的流程比较乱,自己尝试整理了一下，如果有不清楚的可详细进行搜索对比">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://lonelyi.cn/images/sshGit1.png">
 <meta property="og:image" content="http://lonelyi.cn/images/sshGit2.png">
 <meta property="og:image" content="http://lonelyi.cn/images/sshGit3.png">
 <meta property="article:published_time" content="2019-10-24T03:24:16.000Z">
-<meta property="article:modified_time" content="2019-11-09T09:39:02.000Z">
+<meta property="article:modified_time" content="2020-01-08T01:31:01.918Z">
 <meta property="article:author" content="Shiyi">
 <meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
@@ -262,7 +262,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-09 17:39:02" itemprop="dateModified" datetime="2019-11-09T17:39:02+08:00">2019-11-09</time>
+                <time title="修改时间：2020-01-08 09:31:01" itemprop="dateModified" datetime="2020-01-08T09:31:01+08:00">2020-01-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -287,7 +287,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>使用SSH方式实现Git远程连接GitHub<br>网上很多github的流程比较乱,自己尝试整理了一下，如果有不清楚的可详细进行搜索对比</p>
+        <p>使用SSH方式实现Git远程连接GitHub</p>
+<p>网上很多github的流程比较乱,自己尝试整理了一下，如果有不清楚的可详细进行搜索对比</p>
 <a id="more"></a>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">// 查看是否存在秘钥</span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> ~/.ssh</span></span><br><span class="line">//如果能进入到.ssh文件目录下,说明之前生成过</span><br><span class="line"></span><br><span class="line">//查看用户配置的相关信息</span><br><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br><span class="line">如果之前没有创建，执行以下命令</span><br><span class="line">git config –global user.name ‘xxxxx’ </span><br><span class="line">git config –global user.email ‘xxx@xx.xxx’</span><br><span class="line">// 生成秘钥 (邮箱为上方配置的邮箱)</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh-keygen -t rsa -C ‘xxx@xx.xxx’</span></span><br><span class="line">// 连按三个回车</span><br><span class="line">Enter file in which to save the key (/c/Users/shiyi/.ssh/id_rsa):</span><br><span class="line">Enter passphrase (empty for no passphrase):</span><br><span class="line">Enter same passphrase again:</span><br><span class="line">Your identification has been saved in /c/Users/shiyi/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved in /c/Users/shiyi/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:vGtH/vwPOz7DycwjJZ/AHlzQuvFjYpG759Yhh1lWGI shiyi_box@163.com</span><br><span class="line">The key"s randomart image is:</span><br><span class="line">+---[RSA 2048]----+</span><br><span class="line">|    +E .         |</span><br><span class="line">| ..+oo+          |</span><br><span class="line">| oo+*+.o         |</span><br><span class="line">|o.*===+o         |</span><br><span class="line">|==+*... S        |</span><br><span class="line">|B.+.o .o         |</span><br><span class="line">|++o. +  .        |</span><br><span class="line">| +o.+ .          |</span><br><span class="line">|.  o.o           |</span><br><span class="line">+----[SHA256]-----+</span><br><span class="line">//最后在.ssh目录下得到了两个文件：id_rsa（私有秘钥）和id_rsa.pub（公有密钥）</span><br><span class="line">//生成后，现在把id_rsa.pub里面的内容复制到githubd 的add github key 的key里面</span><br><span class="line"></span><br><span class="line">//Settings</span><br></pre></td></tr></table></figure>
 <p><img src="/images/sshGit1.png" alt="sshGit1"></p>
