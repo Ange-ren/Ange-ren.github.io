@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>不小心改库的体验..</title>
+    <url>/2020/01/07/%E4%B8%8D%E5%B0%8F%E5%BF%83%E6%94%B9%E5%BA%93%E7%9A%84%E4%BD%93%E9%AA%8C/</url>
+    <content><![CDATA[<p>今天在修改布局表Vo_BaseVouch表的时候 操作完以后总感觉不对劲</p>
+<p>等我发现的时候，能清晰的感觉的到后脑勺发凉伴随大脑中出现泡沫碎掉的感觉（蓬蓬的）</p>
+<p>过一分钟左右，大脑夺回意识，忘了加条件了….</p>
+<a id="more"></a>
+<p>于是开始数据恢复之旅。</p>
+<p>—————————–祖传分割线———————————————–<br>没有把之前的记录图片记录下来,先把过程记录一下</p>
+<p>后期创建一个库执行一下原过程</p>
+<p>Vo_BaseVouch表中的cFieldUUID全部改成了一样的</p>
+<p>导致公司所有页面加载失败，还好不是业务数据,备份只有昨天的,当时是晚上会丢一天的数据</p>
+<p>Vo_BaseVouch表中的cFieldUUID关联到Vo_BaseField中的cFieldUUID</p>
+<p>其中Vo_BaseVouch中的cFieldKey对应到Vo_BaseField中的cFieldKey</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">update</span> Vo_BaseVouch a</span><br><span class="line"> <span class="keyword">inner</span> <span class="keyword">join</span> Vo_BaseField a2</span><br><span class="line">    <span class="keyword">on</span> a.cFieldKey=a2.cFieldKey</span><br><span class="line">   <span class="keyword">set</span> a.cFieldUUID=a2.cFieldUUID; <span class="comment">--这次真的没有条件......</span></span><br></pre></td></tr></table></figure>
+<p>但是由于Vo_BaseVouch中的Key不是必须对应且允许为空等一些原因,导致部分页面显示不正常</p>
+<p>至少现在大部分页面显示正常了，然后找到昨天备份的数据，将这个表的数据导进来，这个就不展示了</p>
+<p>没有留存之前的图片,也灭心思~,后期新建一个库记录原过程，再来更改文章</p>
+<p>导进来之后命名为Vo_BaseVouch_20200102_bak，两个表中的id都是一致的查询id相等并且uuid相等</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> </span><br><span class="line">   a.id,a.cFieldUUID,b.id,b.uuid</span><br><span class="line"><span class="keyword">from</span></span><br><span class="line">   Vo_BaseVouch a <span class="keyword">join</span>  Vo_BaseVouch_20200102_bak b <span class="keyword">on</span> a.id = b.id</span><br></pre></td></tr></table></figure>
+<p>关联查询出的数据和Vo_BaseVouch_20200102_bak中的数据条数不一致</p>
+<p>直接把备份表中与Vo_BaseVouch不一致的数据改成备份表中的数据id相等uuid不等</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">into</span> renxingyun <span class="keyword">from</span> Vo_BaseVouch <span class="comment">--先备份了一下表</span></span><br><span class="line"><span class="keyword">begin</span> tran </span><br><span class="line"><span class="keyword">update</span> </span><br><span class="line">   a   <span class="keyword">set</span> a.cFieldUUID = b.uuid </span><br><span class="line"> <span class="keyword">from</span> </span><br><span class="line">   Vo_BaseVouch a,ls_test2 b <span class="keyword">where</span> a.id=b.id <span class="keyword">and</span> a.cFieldUUID&lt;&gt;b.uuid</span><br><span class="line"><span class="keyword">commit</span></span><br><span class="line"><span class="keyword">rollback</span> <span class="comment">--结果没问题commit</span></span><br></pre></td></tr></table></figure>
+<p>在修改删除数据的时候如果数据量小的话还是先备份一下数据 然后开启事务</p>
+<p>毕竟春运期间,票也不好买</p>
+]]></content>
+      <tags>
+        <tag>sql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git - 生成 SSH 公钥链接github</title>
+    <url>/2019/10/24/Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5%E9%93%BE%E6%8E%A5github/</url>
+    <content><![CDATA[<p>使用SSH方式实现Git远程连接GitHub<br>网上很多github的流程比较乱,自己尝试整理了一下，如果有不清楚的可详细进行搜索对比</p>
+<a id="more"></a>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">// 查看是否存在秘钥</span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> ~/.ssh</span></span><br><span class="line">//如果能进入到.ssh文件目录下,说明之前生成过</span><br><span class="line"></span><br><span class="line">//查看用户配置的相关信息</span><br><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br><span class="line">如果之前没有创建，执行以下命令</span><br><span class="line">git config –global user.name ‘xxxxx’ </span><br><span class="line">git config –global user.email ‘xxx@xx.xxx’</span><br><span class="line">// 生成秘钥 (邮箱为上方配置的邮箱)</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh-keygen -t rsa -C ‘xxx@xx.xxx’</span></span><br><span class="line">// 连按三个回车</span><br><span class="line">Enter file in which to save the key (/c/Users/shiyi/.ssh/id_rsa):</span><br><span class="line">Enter passphrase (empty for no passphrase):</span><br><span class="line">Enter same passphrase again:</span><br><span class="line">Your identification has been saved in /c/Users/shiyi/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved in /c/Users/shiyi/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:vGtH/vwPOz7DycwjJZ/AHlzQuvFjYpG759Yhh1lWGI shiyi_box@163.com</span><br><span class="line">The key"s randomart image is:</span><br><span class="line">+---[RSA 2048]----+</span><br><span class="line">|    +E .         |</span><br><span class="line">| ..+oo+          |</span><br><span class="line">| oo+*+.o         |</span><br><span class="line">|o.*===+o         |</span><br><span class="line">|==+*... S        |</span><br><span class="line">|B.+.o .o         |</span><br><span class="line">|++o. +  .        |</span><br><span class="line">| +o.+ .          |</span><br><span class="line">|.  o.o           |</span><br><span class="line">+----[SHA256]-----+</span><br><span class="line">//最后在.ssh目录下得到了两个文件：id_rsa（私有秘钥）和id_rsa.pub（公有密钥）</span><br><span class="line">//生成后，现在把id_rsa.pub里面的内容复制到githubd 的add github key 的key里面</span><br><span class="line"></span><br><span class="line">//Settings</span><br></pre></td></tr></table></figure>
+<p><img src="/images/sshGit1.png" alt="sshGit1"></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//点击SSH and GPG keys,创建New SSH key，</span><br></pre></td></tr></table></figure>
+<p><img src="/images/sshGit2.png" alt="sshGit2"></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//粘贴你的密钥到你key输入框中</span><br></pre></td></tr></table></figure>
+<p><img src="/images/sshGit3.png" alt="sshGit3"></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//点击Add SSH key</span><br><span class="line">//输入你的GitHub密码，点击确认按钮</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test</title>
+    <url>/2019/10/21/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>问题解决</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+</search>
